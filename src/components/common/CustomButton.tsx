@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import parse from 'html-react-parser';
+// import parse from 'html-react-parser';
 import { GLOBAL_FONTS } from '../../constants/fonts.constant';
 
 const ActionIcon = styled.div`
@@ -163,7 +163,7 @@ const CustomButton = ({ hoverBgColor, boxShadow, fontFamily, text, width, bgColo
       scale={scale}
       type={type}
     >
-      {parse(text)}
+      {text}
       {
         soon &&
         <ActionIcon>soon</ActionIcon>

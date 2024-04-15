@@ -42,5 +42,6 @@ export const SubTitle = styled.div`
   }
   @media only screen and (max-width: 640px) {
     font-size: 36px;
+    text-align: left;
   }
 `;

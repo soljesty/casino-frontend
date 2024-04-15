@@ -8,7 +8,7 @@ import { SubTitle } from "../../../common/text"
 const GamesBurn = () => {
   return (
     <FlexBox height="966px" alignItems="center">
-      <FlexBox bgColor={GLOBAL_COLOR.bgGrey} height="100%" justifyContent="end" borderRight="3px black solid">
+      <FlexBox bgColor={GLOBAL_COLOR.bgGrey} height="100%" justifyContent="end" borderRight="3px black solid" smPadding="67px 34px" smBorderRight="none" flexWrap="wrap">
         <FlexBox width="720px" height="100%" direction="column" gap="38px" justifyContent="center" paddingLeft="120px">
           <CustomImage
             image="/assets/images/mini-games.svg"
@@ -28,8 +28,10 @@ const GamesBurn = () => {
         </FlexBox>
 
       </FlexBox>
-      <FlexBox bgColor={GLOBAL_COLOR.cyan} height="100%" justifyContent="start">
-        <FlexBox width="720px" height="100%" direction="column" gap="38px" justifyContent="center" paddingLeft="120px">
+      <FlexBox bgColor={GLOBAL_COLOR.cyan} height="100%" justifyContent="start"
+      smPadding="67px 34px"
+      >
+        <FlexBox width="720px" height="100%" direction="column" gap="38px" justifyContent="center" paddingLeft="120px" smGap="38px">
           <CustomImage
             image="/assets/images/burn.svg"
           />

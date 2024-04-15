@@ -22,12 +22,12 @@ const HomeElement = () => {
     <HomeElementStyle>
       <Banner />
       <Presents />
+      
       <Carousel
         text={`#1 ROCKET POWERED COMMUNITY ON SOLANA`}
         bgColor={GLOBAL_COLOR.cyan}
       />
       <NFTMint />
-      
        <GamesBurn />
       <Carousel
         text={`#1 ROCKET POWERED COMMUNITY ON SOLANA`}
