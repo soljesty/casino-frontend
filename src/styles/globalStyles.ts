@@ -4,8 +4,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: Montserrat;
-    background-color: #3136B0;
+
   }
   overflow-x: hidden;
 `;

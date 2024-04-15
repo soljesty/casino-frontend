@@ -11,6 +11,9 @@ const MainContainer = styled.div`
   background-color: ${GLOBAL_COLOR.brown};
   padding-top: 149px;
   padding-bottom: 180px;
+  @media (max-width: 640px) {
+    padding: 63px 0 30px;
+  }
 `;
 
 
@@ -22,9 +25,7 @@ const Body = styled.div`
   gap: 32px;
   width: 100%;
 
-  @media (max-width: 640px) {
-    padding: 100px 0 30px;
-  }
+
 `;
 
 const FaqLists = [

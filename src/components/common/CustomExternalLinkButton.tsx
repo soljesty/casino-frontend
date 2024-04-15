@@ -79,7 +79,7 @@ const CustomExternalLinkButtonStyle = styled.a<CustomExternalLinkButtonType>`
     }
     @media screen and (max-width: 768px) {
         max-width: ${(props) => props.smWidth || '100%'};
-        height: ${(props) => props.smHeight || '40px'};
+        height: ${(props) => props.smHeight || '66px'};
         margin-top: ${(props) => props.smMarginTop || '0px'};
         font-style: normal;
         font-weight: ${(props) => props.smFontWeight};

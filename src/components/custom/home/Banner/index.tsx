@@ -13,6 +13,7 @@ const BannerStyle = styled.div`
   padding-top: 150px;
   padding-bottom: 264px;
   position: relative;
+  /* border-bottom: #737A96 50px solid; */
 `
 
 const Header = styled.div`

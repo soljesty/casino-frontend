@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { GLOBAL_FONTS } from "../../../constants/fonts.constant";
 
-export const Title = styled.div`
-  color: #FFF;
+interface ITitleStyle{
+  smFontSize?: string;
+}
 
+export const Title = styled.div<ITitleStyle>`
+  color: #FFF;
   text-align: center;
   text-shadow: 4px 4px 0px #000;
   -webkit-text-stroke-width: 2;
@@ -17,7 +20,7 @@ export const Title = styled.div`
     color: #FFD500;
   }
   @media only screen and (max-width: 640px) {
-    font-size: 46px;
+    font-size: ${(props) => props.smFontSize ? props.smFontSize : "60px"};
   }
 `;
 
@@ -38,6 +41,6 @@ export const SubTitle = styled.div`
     color: #FFD500;
   }
   @media only screen and (max-width: 640px) {
-    font-size: 46px;
+    font-size: 36px;
   }
 `;

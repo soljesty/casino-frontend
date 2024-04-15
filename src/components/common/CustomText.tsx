@@ -56,6 +56,7 @@ interface CustomTextStyleType {
   smPadding?: string;
   boxShadow?: string;
   smDisplay?: string;
+  smTextAlign?: string;
 }
 
 ///
@@ -104,6 +105,7 @@ export const CustomTextStyle = styled.div<CustomTextStyleType>`
   padding-bottom: ${(props) => props.paddingBottom};
   padding-right: ${(props) => props.paddingRight};
   padding-left: ${(props) => props.paddingLeft};
+  /* text-transform: lowercase; */
   strong{
     font-weight: 700;
   }
@@ -132,6 +134,7 @@ export const CustomTextStyle = styled.div<CustomTextStyleType>`
     border-right: ${(props) => props.smBorderRight};
     align-items: ${(props) => props.smAlignItems};
     padding: ${(props) => props.smPadding};
+    text-align: ${(props) => props.smTextAlign || 'start'};
   }
 `
 const CustomText = ({
@@ -185,7 +188,8 @@ const CustomText = ({
   borderBottom,
   borderRight,
   boxShadow,
-  smDisplay
+  smDisplay,
+  smTextAlign
 }: CustomTextStyleType) => {
   // const { colorMode } = useGlobalContext()
   let _text: any = typeof (text) === 'number' ? text.toString() : text;
@@ -243,6 +247,7 @@ const CustomText = ({
       smPadding={smPadding}
       smDisplay={smDisplay}
       color={color}
+      smTextAlign = {smTextAlign}
     >
       {parse(_text) ? parse(_text) : ''}
     </CustomTextStyle>

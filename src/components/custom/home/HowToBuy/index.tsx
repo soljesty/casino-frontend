@@ -1,3 +1,4 @@
+import { useMedia } from "react-use"
 import { GLOBAL_COLOR } from "../../../../constants/colors.constant"
 import CustomImage from "../../../common/CustomImage"
 import CustomText from "../../../common/CustomText"
@@ -32,37 +33,55 @@ const items: any = [
 ]
 
 const HowToBuy = () => {
+  const isMobile = useMedia("(max-width: 768px)");
   return (
     <FlexBox
       paddingTop="184px"
       paddingBottom="184px"
       bgColor={GLOBAL_COLOR.bgGrey}
+      smPadding="65px 36px 77px"
     >
 
-      <FlexBox direction="column" alignItems="center" gap="106px" width="1440px">
-        <Title>
+      <FlexBox direction="column" alignItems="center" gap="106px" width="1440px" smGap="71px">
+        <Title smFontSize="36px">
           HOW TO BUY  <span>$</span>ACME
         </Title>
-        <FlexBox flexWrap="wrap" gap="130px 50px">
+        <FlexBox flexWrap="wrap" gap="130px 50px" smGap="50px">
           {
             items.map((item: any) => {
               return (
-                <FlexBox direction="column" width="553px" gap="23px">
-                  <CustomImage
-                    image={item.banner}
-                  />
+                <FlexBox direction="column" width="553px" gap="23px" smGap="23px">
+                  <FlexBox
+                    justifyContent="start"
+                    smJustifyContent="start"
+                    smDirection="row" smGap="35px">
+                    <CustomImage
+                      image={item.banner}
+                    />
+                    {
+                      isMobile &&
+                      <CustomImage
+                        image={item.image}
+                        smWidth="72px"
+                        smHeight="72px"
+                      />
+                    }
+                  </FlexBox>
                   <FlexBox direction="column" gap="38px">
                     <SubTitle>
                       {item.title}
                     </SubTitle>
-                    <FlexBox alignItems="center" gap="56px" paddingLeft="18px">
-                      <CustomImage
-                        image={item.image}
-                      />
+                    <FlexBox alignItems="center" gap="56px" paddingLeft="18px" smGap="38px">
+                      {
+                        !isMobile && <CustomImage
+                          image={item.image}
+                        />
+                      }
                       <CustomText
                         text={item.content}
                         fontSize="26px"
                         width="355px"
+                        smFontSize="22px"
                       />
                     </FlexBox>
                   </FlexBox>

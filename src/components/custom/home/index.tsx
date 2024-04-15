@@ -27,25 +27,16 @@ const HomeElement = () => {
         bgColor={GLOBAL_COLOR.cyan}
       />
       <NFTMint />
-      <GamesBurn />
+      
+       <GamesBurn />
       <Carousel
         text={`#1 ROCKET POWERED COMMUNITY ON SOLANA`}
         bgColor={GLOBAL_COLOR.red}
       />
       <Tokenomics />
       <HowToBuy />
-
       <Faq />
       <Community />
-      {/* <MainLanding />
-      <LooperImage
-        src="/assets/images/looper.svg"
-      />
-      <WhatIsACME />
-      <ArchitectureOverview />
-      <Tokenomics />
-      <Roadmap />
-      <TakeStep /> */}
     </HomeElementStyle>
   )
 }

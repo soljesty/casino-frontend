@@ -46,7 +46,7 @@ const Title = styled.h2`
   margin: 0;
 
   @media (max-width: 640px) {
-    font-size: 26px;
+    font-size: 22px;
   }
 `;
 
@@ -148,6 +148,7 @@ export const FaqItem = ({
         <Detail $active={active === data.id}>
           <CustomText
             text={data.detail}
+            smFontSize="22px"
           />
         </Detail>
       }

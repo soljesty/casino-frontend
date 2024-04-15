@@ -9,7 +9,7 @@ const Presents = () => {
       paddingTop="91px"
       paddingBottom="135px"
       bgColor="#737A96"
-      marginTop="-2px"
+      marginTop="0px"
     >
       <FlexBox
         width="1440px"

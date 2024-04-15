@@ -10,6 +10,9 @@ const SocialGroup = styled.div`
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    gap: 18px;
+  }
 `;
 
 const Community = () => {
@@ -17,6 +20,8 @@ const Community = () => {
     <FlexBox bgColor={GLOBAL_COLOR.yellow} direction="column" paddingTop="173px" paddingBottom="150px" gap="80px" alignItems="center"
       borderBottom="3px solid #252525"
       borderTop="3px solid #252525"
+      smPadding="58px 10px"
+      smGap="40px"
     >
       <SubTitle>
         ROCKET POWERED COMMUNITY
