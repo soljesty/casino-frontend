@@ -42,8 +42,9 @@ const GamesBurn = () => {
             width="462px"
           />
           <CustomButton
-            text="PLAY"
+            text="LEARN"
             soon={true}
+            width="158px"
           />
         </FlexBox>
 

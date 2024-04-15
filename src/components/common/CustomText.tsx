@@ -79,7 +79,6 @@ export const CustomTextStyle = styled.div<CustomTextStyleType>`
   font-style: normal;
   font-size: ${(props) => props.fontSize || '22px'};
   line-height: ${(props) => props.lineHeight || 'normal'};
-  text-transform: lowercase;
   text-align: ${(props) => props.textAlign || 'start'};
   height: ${(props) => props.height || ''};
   margin-top: ${(props) => props.marginTop || '0px'};
